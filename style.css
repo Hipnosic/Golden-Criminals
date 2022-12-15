@@ -17,18 +17,21 @@ body {
   width: 100%;
 }
 .product-name {
-  right: 50px;
+  right: 80px;
   bottom: 25px;
 }
 .product-price {
-  right: 50px;
+  right: 80px;
   bottom: 15px;
 }
 .add-product {
-  width: 2em;
-  height: 2em;
-  right: 15px;
-  bottom: 35px;
+  background-color: lawngreen;
+  border: none;
+  text-align: center;
+  width: 4em;
+  height: 4em;
+  right: 20px;
+  bottom: 25px;
 }
 .product-name,
 .product-info,
