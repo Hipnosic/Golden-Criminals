@@ -1,25 +1,50 @@
 body {
   margin: 0;
 }
-.products {
-  max-width: 450px;
-  max-height: 450px;
-  display: grid;
-  grid-template-columns: repeat(1, 100%);
+
+.featured-title,
+.logotype,
+.featured-products {
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
+
+.products {
+  background-color: black; /* byta ut */
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 100%);
+  gap: 3rem;
+}
+.featured-product,
 .product {
+  display: flex;
+  margin: auto;
+  max-width: 450px;
   color: white;
   position: relative;
   overflow: hidden;
-  width: 100%;
 }
+.featured-img,
 .product-img {
   width: 100%;
 }
+
+.featured-product-name {
+  font-size: 0.7em;
+}
+
+.featured-product-price {
+  font-size: 0.4em;
+}
+
+.featured-product-name,
 .product-name {
   right: 80px;
   bottom: 25px;
 }
+.featured-product-price,
 .product-price {
   right: 80px;
   bottom: 15px;
@@ -33,11 +58,35 @@ body {
   right: 20px;
   bottom: 25px;
 }
+.product-info {
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
 .product-name,
 .product-info,
 .product-price,
 .add-product {
   position: absolute;
+}
+
+.featured-product-name,
+.featured-product-info,
+.featured-product-price,
+.featured-add-product {
+  position: absolute;
+}
+
+.nav-container {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5em;
 }
 .nav-container {
   display: flex;
@@ -51,4 +100,40 @@ body {
 .container-buttons {
   height: 100%;
   width: 100%;
+}
+.header-text {
+  width: 7em;
+  height: 1.5em;
+  margin: 0px;
+  margin-top: 0.1em;
+}
+.header-container {
+  top: 0em;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.5em;
+  background-color: aqua;
+  opacity: 0.9;
+  padding-top: 0.5em;
+  z-index: 10;
+}
+.helpBtn {
+  height: 3.5em;
+  width: 3.5em;
+}
+.languageBtn {
+  height: 3.5em;
+  width: 3.5em;
+}
+.logo {
+  margin-right: 0.5em;
+  border-radius: 90%;
+  height: 3em;
+  width: 3em;
+  background-color: black;
+}
+.footer-container {
+  margin-top: 80px;
 }
