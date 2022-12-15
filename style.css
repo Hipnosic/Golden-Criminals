@@ -3,16 +3,18 @@ body {
   padding: 0;
 }
 .products {
-  max-width: 450px;
-  max-height: 450px;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(1, 100%);
+  gap: 3rem;
 }
 .product {
+  display: flex;
+  margin: auto;
+  max-width: 450px;
   color: white;
   position: relative;
   overflow: hidden;
-  width: 100%;
 }
 .product-img {
   width: 100%;
@@ -84,4 +86,7 @@ body {
   height: 3em;
   width: 3em;
   background-color: black;
+}
+.footer-container {
+  margin-top: 80px;
 }
