@@ -3,6 +3,7 @@ body {
   padding: 0;
 }
 .products {
+  background-color: black; /* byta ut */
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 100%);
@@ -36,6 +37,14 @@ body {
   right: 20px;
   bottom: 25px;
 }
+.product-info {
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
 .product-name,
 .product-info,
 .product-price,
@@ -55,13 +64,13 @@ body {
   height: 100%;
   width: 100%;
 }
-.header-text{
+.header-text {
   width: 7em;
   height: 1.5em;
   margin: 0px;
   margin-top: 0.1em;
 }
-.header-container{
+.header-container {
   top: 0em;
   position: sticky;
   display: flex;
@@ -73,15 +82,15 @@ body {
   padding-top: 0.5em;
   z-index: 10;
 }
-.helpBtn{
+.helpBtn {
   height: 3.5em;
   width: 3.5em;
 }
-.languageBtn{
+.languageBtn {
   height: 3.5em;
   width: 3.5em;
 }
-.logo{
+.logo {
   margin-right: 0.5em;
   border-radius: 90%;
   height: 3em;
