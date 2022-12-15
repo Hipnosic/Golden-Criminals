@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+.products {
+  max-width: 450px;
+  max-height: 450px;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+.product {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.product-img {
+  width: 100%;
+}
+.product-name {
+  right: 10%;
+  bottom: 5%;
+}
+.product-price {
+  right: 10%;
+  bottom: 3%;
+}
+.add-product {
+  width: 2em;
+  height: 2em;
+  right: 3%;
+  bottom: 7.5%;
+}
+.product-name,
+.product-info,
+.product-price,
+.add-product {
+  position: absolute;
+}
