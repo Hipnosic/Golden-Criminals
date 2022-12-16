@@ -11,7 +11,7 @@ body {
 }
 
 .products {
-  background-color: black; /* byta ut */
+  background-color: #3B3B3B; /* byta ut */
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 100%);
@@ -22,7 +22,7 @@ body {
   display: flex;
   margin: auto;
   max-width: 450px;
-  color: white;
+  color: rgb(226, 226, 226);
   position: relative;
   overflow: hidden;
 }
