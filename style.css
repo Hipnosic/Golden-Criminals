@@ -46,8 +46,9 @@ body {
 }
 .featured-product-price,
 .product-price {
+  font-size: 1.2rem;
   right: 80px;
-  bottom: 15px;
+  bottom: 5px;
 }
 .add-product {
   background-color: lawngreen;
@@ -56,7 +57,7 @@ body {
   width: 4em;
   height: 4em;
   right: 20px;
-  bottom: 25px;
+  bottom: 22px;
 }
 .product-info {
   width: 50%;
@@ -77,6 +78,11 @@ body {
   position: absolute;
 }
 
+.product-name,
+.product-price {
+  background-color: black;
+  overflow: hidden;
+}
 .nav-container {
   border-top: 1px solid black;
   background-color: white;

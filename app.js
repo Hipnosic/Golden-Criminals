@@ -1,35 +1,68 @@
 const addProductBtn = document.querySelectorAll('.add-product');
-const products = document.querySelectorAll('.product');
+const productContainer = document.querySelector('.products');
+const db = database;
 
 for (const button of addProductBtn) {
-  button.addEventListener('click', () => {
-    alert('"Product name" added to cart');
-  });
+    button.addEventListener('click', () => {
+        alert('"Product name" added to cart');
+    });
 }
+// FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
+console.log(db.drinks)
+function products() {
+    if (window.location.pathname == '/products.html') {
+        for (const drink of db.drinks) {
+            const productDiv = document.createElement('article');
+            const img = document.createElement('img');
+            const header = document.createElement('h2');
+            const span = document.createElement('span');
+            const text = document.createElement('p');
+            const button = document.createElement('button');
+            productDiv.classList.add('product');
+            img.classList.add('product-img');
+            header.classList.add('product-name');
+            span.classList.add('product-info');
+            text.classList.add('product-price');
+            button.classList.add('add-product');
 
-for (const prduct of products) {
-  let clicked = false;
-  prduct.addEventListener('click', (e) => {
-    let targetParent = e.target.parentNode;
-    let span = targetParent.querySelector('.product-info');
-    let image = targetParent.querySelector('.product-img');
-    if (e.target.nodeName != 'BUTTON') {
-      if (clicked == false) {
-        clicked = true;
-        span.setAttribute('style', 'display: block;');
-        image.setAttribute('style', 'filter: blur(20px);');
-      } else if (clicked == true) {
-        clicked = false;
-        span.setAttribute('style', 'display: none;');
-        image.setAttribute('style', 'filter: blur(0px);');
-      }
+
+            img.setAttribute('src', `${drink.img}`);
+            header.innerText = `${drink.name}`;
+            span.innerText = `${drink.dsc}`;
+            text.innerText = `${drink.price} kr`;
+            button.innerText = '+';
+            productDiv.append(img, header, span, text, button);
+            productContainer.append(productDiv);
+        }
     }
-  });
 }
 
-function createHeader(){
-  let headerContainer = document.querySelector('.header-container'); 
-  headerContainer.innerHTML = `
+function addListener() {
+    const products = document.querySelectorAll('.product');
+    for (const prduct of products) {
+        let clicked = false;
+        prduct.addEventListener('click', (e) => {
+            let targetParent = e.target.parentNode;
+            let span = targetParent.querySelector('.product-info');
+            let image = targetParent.querySelector('.product-img');
+            if (e.target.nodeName != 'BUTTON') {
+                if (clicked == false) {
+                    clicked = true;
+                    span.setAttribute('style', 'display: block;');
+                    image.setAttribute('style', 'filter: blur(20px);');
+                } else if (clicked == true) {
+                    clicked = false;
+                    span.setAttribute('style', 'display: none;');
+                    image.setAttribute('style', 'filter: blur(0px);');
+                }
+            }
+        });
+    }
+}
+
+function createHeader() {
+    let headerContainer = document.querySelector('.header-container');
+    headerContainer.innerHTML = `
   <h1 class="header-text">The Kraken Inn</h1>
   <a href="#">
     <button type="button" class="languageBtn">ENG</button>
@@ -37,9 +70,9 @@ function createHeader(){
   <button class="helpBtn"><img src="/icons/assistance.png" alt="Help" height="30" width="30"></button>
   <div class="logo"></div>`;
 }
-function createFooter(){
-  let FooterContainer = document.querySelector('.footer-container'); 
-  FooterContainer.innerHTML = `
+function createFooter() {
+    let FooterContainer = document.querySelector('.footer-container');
+    FooterContainer.innerHTML = `
   <nav class="nav-container">
     <a class="container-buttons" href="index.html">
       <button type="button" class="buttons">
@@ -63,5 +96,8 @@ function createFooter(){
     </a>
   </nav>`;
 }
+
+products();
+addListener();
 createHeader();
 createFooter();
