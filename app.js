@@ -1,14 +1,7 @@
-const addProductBtn = document.querySelectorAll('.add-product');
 const productContainer = document.querySelector('.products');
 const db = database;
 
-for (const button of addProductBtn) {
-    button.addEventListener('click', () => {
-        alert('"Product name" added to cart');
-    });
-}
 // FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
-console.log(db.drinks)
 function products() {
     if (window.location.pathname == '/products.html') {
         for (const drink of db.drinks) {
@@ -25,7 +18,6 @@ function products() {
             text.classList.add('product-price');
             button.classList.add('add-product');
 
-
             img.setAttribute('src', `${drink.img}`);
             header.innerText = `${drink.name}`;
             span.innerText = `${drink.dsc}`;
@@ -39,6 +31,12 @@ function products() {
 
 function addListener() {
     const products = document.querySelectorAll('.product');
+    const addProductBtn = document.querySelectorAll('.add-product');
+    for (const button of addProductBtn) {
+        button.addEventListener('click', () => {
+            alert('"Product name" added to cart');
+        });
+    }
     for (const prduct of products) {
         let clicked = false;
         prduct.addEventListener('click', (e) => {
