@@ -78,6 +78,8 @@ body {
 }
 
 .nav-container {
+  border-top: 1px solid black;
+  background-color: white;
   display: flex;
   position: fixed;
   bottom: 0px;
@@ -87,7 +89,8 @@ body {
 }
 .buttons,
 .container-buttons {
-  border: 1px solid black;
+  background-color: white;
+  border: none;
   height: 100%;
   width: 100%;
 }
@@ -127,4 +130,9 @@ body {
 .footer-container {
   margin-top: 80px;
   background-color: white;
+}
+
+.icon {
+  width: 50%;
+  object-fit: cover;
 }
