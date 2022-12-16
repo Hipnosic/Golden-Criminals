@@ -41,28 +41,27 @@ function createFooter(){
   let FooterContainer = document.querySelector('.footer-container'); 
   FooterContainer.innerHTML = `
   <nav class="nav-container">
-          <a class="container-buttons" href="index.html">
-            <button type="button" class="buttons">
-              <img class="icon" src="/icons/home.png" alt="Home icon" />
-            </button>
-          </a>
-          <a class="container-buttons" href="products.html">
-            <button type="button" class="buttons">
-              <img class="icon" src="/icons/food.png" alt="Home icon" />
-            </button>
-          </a>
-          <a class="container-buttons" href="order.html">
-            <button type="button" class="buttons">
-              <img class="icon" src="/icons/cart.png" alt="Home icon" />
-            </button>
-          </a>
-          <a class="container-buttons" href="checkout.html">
-            <button type="button" class="buttons">
-              <img class="icon" src="/icons/pay.png" alt="Home icon" />
-            </button>
-          </a>
-        </nav>`;
-  
+    <a class="container-buttons" href="index.html">
+      <button type="button" class="buttons">
+        <img class="icon" src="/icons/home.png" alt="Home icon" />
+      </button>
+    </a>
+    <a class="container-buttons" href="products.html">
+      <button type="button" class="buttons">
+        <img class="icon" src="/icons/food.png" alt="Home icon" />
+      </button>
+    </a>
+    <a class="container-buttons" href="order.html">
+      <button type="button" class="buttons">
+        <img class="icon" src="/icons/cart.png" alt="Home icon" />
+      </button>
+    </a>
+    <a class="container-buttons" href="checkout.html">
+      <button type="button" class="buttons">
+        <img class="icon" src="/icons/pay.png" alt="Home icon" />
+      </button>
+    </a>
+  </nav>`;
 }
 createHeader();
 createFooter();
