@@ -3,7 +3,7 @@ describe('Custom order', () => {
 
     it(`Form should not be empty`, () => {
 
-        expect(checkOrder(input).trim()).not.toEqual('');
+        expect(checkOrder(input)).not.toEqual('');
     });
 });
 
