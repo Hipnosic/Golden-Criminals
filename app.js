@@ -64,8 +64,8 @@ function searchFunction() {
     const products = document.querySelectorAll('.product');
     input = document.getElementById('searchbar').value
     let productPos = 0;
-    for (const drink of db.drinks) {
-        if (drink.dsc.toUpperCase().includes(input.toUpperCase()) || drink.name.toUpperCase().includes(input.toUpperCase())) {
+    for (const product of pickedProducts) {
+        if (product.dsc.toUpperCase().includes(input.toUpperCase()) || product.name.toUpperCase().includes(input.toUpperCase())) {
             /*
             for testing
             console.log(productPos)
