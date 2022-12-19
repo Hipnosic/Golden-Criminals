@@ -154,10 +154,6 @@
   text-align: center;
   /*for no item styling*/
 }
-.searchbar {
-  /*for search bar styling*/
-  margin: 1vh 0vh 0vh 1vh;
-}
 .filters {
   display: flex;
   justify-content: center;
