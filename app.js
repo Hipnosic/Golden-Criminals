@@ -101,7 +101,6 @@ function CheckAndCreateIfNoItem(productPos) {
 function createHeader() {
     let headerContainer = document.querySelector('.header-container');
     headerContainer.innerHTML = `
-    <header class="header-container">
     <img
       class="page-logotype"
       src="/images/kraken-text-logo.svg"
@@ -112,13 +111,11 @@ function createHeader() {
     </a>
     <button class="helpBtn">
       <img src="/icons/question.png" alt="Help" height="30" width="30" />
-    </button>
-  </header>`;
+    </button>`;
 }
 function createFooter() {
     let FooterContainer = document.querySelector('.footer-container');
     FooterContainer.innerHTML = `
-    <footer class="footer-container">
     <nav class="nav-container">
       <a class="container-buttons" href="index.html">
         <button type="button" class="buttons">
@@ -140,8 +137,7 @@ function createFooter() {
           <img class="icon" src="icons/right.png" alt="Home icon" />
         </button>
       </a>
-    </nav>
-  </footer>`;
+    </nav>`;
 }
 
 products();
