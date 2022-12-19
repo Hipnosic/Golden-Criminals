@@ -1,37 +1,32 @@
 const productContainer = document.querySelector('.products');
 const db = database;
-let i = 0;
-for (const button of addProductBtn) {
-    button.addEventListener('click', () => {
-        alert('"Product name" added to cart');
-    });
-}
+
 // FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
 function products() {
-  if (window.location.pathname == '/products.html') {
-    for (const drink of db.drinks) {
-        const productDiv = document.createElement('article');
-        const img = document.createElement('img');
-        const header = document.createElement('h2');
-        const span = document.createElement('span');
-        const text = document.createElement('p');
-        const button = document.createElement('button');
-        productDiv.classList.add('product');
-        img.classList.add('product-img');
-        header.classList.add('product-name');
-        span.classList.add('product-info');
-        text.classList.add('product-price');
-        button.classList.add('add-product');
+    if (window.location.pathname == '/products.html') {
+        for (const drink of db.drinks) {
+            const productDiv = document.createElement('article');
+            const img = document.createElement('img');
+            const header = document.createElement('h2');
+            const span = document.createElement('span');
+            const text = document.createElement('p');
+            const button = document.createElement('button');
+            productDiv.classList.add('product');
+            img.classList.add('product-img');
+            header.classList.add('product-name');
+            span.classList.add('product-info');
+            text.classList.add('product-price');
+            button.classList.add('add-product');
 
-        img.setAttribute('src', `${drink.img}`);
-        header.innerText = `${drink.name}`;
-        span.innerText = `${drink.dsc}`;
-        text.innerText = `${drink.price} kr`;
-        button.innerText = '+';
-        productDiv.append(img, header, span, text, button);
-        productContainer.append(productDiv);
+            img.setAttribute('src', `${drink.img}`);
+            header.innerText = `${drink.name}`;
+            span.innerText = `${drink.dsc}`;
+            text.innerText = `${drink.price} kr`;
+            button.innerText = '+';
+            productDiv.append(img, header, span, text, button);
+            productContainer.append(productDiv);
+        }
     }
-  }
 }
 
 function addListener() {
@@ -60,44 +55,7 @@ function addListener() {
                 }
             }
         });
-        
-function searchFunction() {
-  const products = document.querySelectorAll('.product');
-  input = document.getElementById('searchbar').value
-  let productPos = 0;
-  for (const drink of db.drinks) {
-    if (drink.dsc.toUpperCase().includes(input.toUpperCase()) || drink.name.toUpperCase().includes(input.toUpperCase())){
-      /*
-      for testing
-      console.log(productPos)
-      console.log(drink.dsc.toUpperCase());
-      console.log(input.toUpperCase());
-      console.log(!drink.dsc.toUpperCase().includes(input.toUpperCase()));
-      console.log(drink.name.toUpperCase());
-      console.log(input.toUpperCase());
-      console.log(!drink.name.toUpperCase().includes(input.toUpperCase()));
-      */
-      products[productPos].style.display = '';
-
     }
-    else{
-      products[productPos].style.display = 'none';
-    }
-    productPos++;
-  }
-  CheckAndCreateIfNoItem(productPos);
-}
-
-function CheckAndCreateIfNoItem(productPos){
-  let mainContainer = document.querySelector('.noItems');
-  const products = document.querySelectorAll('.product');
-  for (let i = 0; i < productPos; i++) {
-    if (products[i].style.display == '') {
-      mainContainer.style.display = 'none';
-      return;
-    }
-  }
-  mainContainer.style.display = '';
 }
 
 function createHeader() {
