@@ -1,15 +1,15 @@
 
-describe('Order', () => {
+describe('Custom order', () => {
 
-    it(`Form should be filled in`, () => {
+    it(`Form should not be empty`, () => {
 
-        expect(checkOrder(input)).not.toEqual(''.trim());
+        expect(checkOrder(input).trim()).not.toEqual('');
     });
+});
 
-    describe('Ready to order', () => {
+describe('Ready to order', () => {
 
-        it('Custom order is ready', () => {
-            expect(clickButton()).toBeTruthy();
-        })
-    })
+    it('Custom order is ready', () => {
+        expect(clickButton()).toBeTruthy();
+    });
 });

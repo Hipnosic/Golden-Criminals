@@ -1,13 +1,13 @@
-let input = 'Order'
+let input = 'A very good drink that not very good for you!'
 let clickable = false;
 function checkOrder(order) {
-    order = input;
+    order = input.trim();
     return order;
 }
 
 function clickButton() {
-    if (input == ''.trim()) {
-        return clickable = false;
+    if (input.trim() == '') {
+        return clickable;
     } else {
         return clickable = true;
     }
