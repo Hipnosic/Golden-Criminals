@@ -2,7 +2,6 @@ const addProductBtn = document.querySelectorAll('.add-product');
 const productContainer = document.querySelector('.products');
 const db = database;
 let i = 0;
-
 for (const button of addProductBtn) {
     button.addEventListener('click', () => {
         alert('"Product name" added to cart');
@@ -65,15 +64,37 @@ function searchFunction() {
   input = document.getElementById('searchbar').value
   let productPos = 0;
   for (const drink of db.drinks) {
-    if (!drink.dsc.includes(input)){
+    if (drink.dsc.toUpperCase().includes(input.toUpperCase()) || drink.name.toUpperCase().includes(input.toUpperCase())){
+      /*
+      for testing
       console.log(productPos)
-      console.log(drink.dsc);
-      console.log(input);
-      console.log(drink.dsc.includes(input));
+      console.log(drink.dsc.toUpperCase());
+      console.log(input.toUpperCase());
+      console.log(!drink.dsc.toUpperCase().includes(input.toUpperCase()));
+      console.log(drink.name.toUpperCase());
+      console.log(input.toUpperCase());
+      console.log(!drink.name.toUpperCase().includes(input.toUpperCase()));
+      */
+      products[productPos].style.display = '';
+    }
+    else{
       products[productPos].style.display = 'none';
     }
     productPos++;
   }
+  CheckAndCreateIfNoItem(productPos);
+}
+
+function CheckAndCreateIfNoItem(productPos){
+  let mainContainer = document.querySelector('.noItems');
+  const products = document.querySelectorAll('.product');
+  for (let i = 0; i < productPos; i++) {
+    if (products[i].style.display == '') {
+      mainContainer.style.display = 'none';
+      return;
+    }
+  }
+  mainContainer.style.display = '';
 }
 
 function createHeader() {

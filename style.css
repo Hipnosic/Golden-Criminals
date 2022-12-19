@@ -142,3 +142,17 @@ body {
   width: 50%;
   object-fit: cover;
 }
+
+.noItems{
+  margin-left: 5vh;
+  background-color: red;
+  color: white;
+  width: 20em;
+  height: 3em;
+  text-align: center;
+  /*for no item styling*/
+}
+.searchbar{
+  /*for search bar styling*/
+  margin: 1vh 0vh 0vh 1vh;
+}
