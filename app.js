@@ -98,13 +98,15 @@ function CheckAndCreateIfNoItem(productPos) {
     mainContainer.style.display = '';
 }
 
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
 function createHeader() {
     let headerContainer = document.querySelector('.header-container');
     headerContainer.innerHTML = `
   <h1 class="header-text">The Kraken Inn</h1>
-  <a href="#">
-    <button type="button" class="languageBtn">ENG</button>
-  </a>
+  <div id="google_translate_element"></div>
   <button class="helpBtn"><img src="/icons/assistance.png" alt="Help" height="30" width="30"></button>
   <div class="logo"></div>`;
 }
