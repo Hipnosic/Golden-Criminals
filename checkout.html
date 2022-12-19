@@ -9,21 +9,24 @@
   </head>
   <body>
     <header class="header-container">
-      <h1 class="header-text">The Kraken Inn</h1>
+      <img
+        class="page-logotype"
+        src="/images/kraken-text-logo.svg"
+        alt="The Kraken Inn logotype"
+      />
       <a href="#">
         <button type="button" class="languageBtn">ENG</button>
       </a>
-      <button class="helpBtn"><img src="/icons/assistance.png" alt="Help" height="30" width="30"></button>
-      <div class="logo"></div>
+      <button class="helpBtn">
+        <img src="/icons/question.png" alt="Help" height="30" width="30" />
+      </button>
     </header>
     <main class="checkout">
       <article class="checkout">
         <div class="container">
-          <p class="help" style="color: #c02828">
-            Please review your bill and pay
-          </p>
-          <div class="card-conteiner">
-            <div class="header-conteiner">
+          <p class="help">Please review your bill and pay</p>
+          <div class="card-container">
+            <div class="header-card-container">
               <h5 class="center-align">The Kraken Inn.</h5>
               <p>Dec 12, 2022 Kl: 13:41</p>
             </div>
@@ -62,31 +65,33 @@
             </div>
             <div class="payment">
               <h5>Payment Information</h5>
-              <div class="credit-card-conteiner">
+              <div class="credit-card-container">
                 <div class="front">
                   <div class="number input-field">
-                    <label for="card-number">Card Number</label>
                     <input
                       type="text"
                       id="card-number"
                       class="input-card-number"
-                      maxlength="4"
+                      maxlength="16"
+                      placeholder="Kortnummer"
                     />
                     <input
                       type="text"
-                      id="card-number-1"
+                      id="card-date"
                       class="input-card-number"
                       maxlength="4"
+                      placeholder="MM/ÅÅ"
                     />
                     <input
                       type="text"
-                      id="card-number-2"
+                      id="card-cvv"
                       class="input-card-number"
-                      maxlength="4"
+                      maxlength="3"
+                      placeholder="CVV"
                     />
                   </div>
 
-                  <div class="cvv input-field">
+                  <!-- <div class="cvv input-field">
                     <label for="card-cvv">CVV</label>
                     <input
                       type="text"
@@ -94,12 +99,12 @@
                       class="input-card-cvv"
                       maxlength="3"
                     />
-                  </div>
-                  <div class="card-holder input-field">
+                  </div> -->
+                  <!-- <div class="card-holder input-field">
                     <label for="name">Card Holder</label>
                     <input type="text" name="name" id="name" />
-                  </div>
-                  <div class="card-expiration-date input-field">
+                  </div> -->
+                  <!-- <div class="card-expiration-date input-field">
                     <select id="month">
                       <option></option>
                       <option>Jan</option>
@@ -129,14 +134,14 @@
                       <option>2025</option>
                     </select>
                     <label>Expires</label>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
 
             <div class="btn-checkout">
-              <button class="button"><span>Cencel</span></button>
-              <button class="button"><span>Checkout</span></button>
+              <button class="button"><span>Avbryt</span></button>
+              <button class="button"><span>Beställ</span></button>
             </div>
           </div>
         </div>
@@ -153,24 +158,24 @@
       </article>
       <footer class="footer-container">
         <nav class="nav-container">
-          <a class="container-buttons" href="index.html">
+          <a class="container-buttons" href="#">
             <button type="button" class="buttons">
-              <img class="icon" src="icons/home.png" alt="Home icon" />
+              <img class="icon" src="icons/pirate-skull.png" alt="Home icon" />
             </button>
           </a>
           <a class="container-buttons" href="products.html">
             <button type="button" class="buttons">
-              <img class="icon" src="icons/food.png" alt="Home icon" />
+              <img class="icon" src="icons/saber.png" alt="Home icon" />
             </button>
           </a>
           <a class="container-buttons" href="order.html">
             <button type="button" class="buttons">
-              <img class="icon" src="icons/cart.png" alt="Home icon" />
+              <img class="icon" src="icons/chest.png" alt="Home icon" />
             </button>
           </a>
-          <a class="container-buttons" href="#">
+          <a class="container-buttons" href="checkout.html">
             <button type="button" class="buttons">
-              <img class="icon" src="icons/pay.png" alt="Home icon" />
+              <img class="icon" src="icons/right.png" alt="Home icon" />
             </button>
           </a>
         </nav>
