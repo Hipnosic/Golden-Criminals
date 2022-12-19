@@ -44,13 +44,13 @@
 .featured-product-name,
 .product-name {
   right: 80px;
-  bottom: 25px;
+  bottom: 46px;
 }
 .featured-product-price,
 .product-price {
   font-size: 1.2rem;
   right: 80px;
-  bottom: 5px;
+  bottom: 24px;
 }
 .add-product {
   background-color: lawngreen;
@@ -179,7 +179,7 @@
 
 .filters-nav li {
   height: auto;
-  width: 135.8px;
+  width: 100px;
   float: left;
   text-align: center;
   list-style: none;
@@ -191,10 +191,13 @@
 
 .filters-nav a {
   padding: 18px 0;
-  border-left: 1px solid #ccc9c9;
+  border-left: 1px solid #c9d4d8;
   text-decoration: none;
   color: white;
   display: block;
+}
+.filters-nav {
+  border-right: 1px solid #c9d4d8;
 }
 
 .filters-nav li:hover,
