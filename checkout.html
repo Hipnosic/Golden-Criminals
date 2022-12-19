@@ -11,14 +11,13 @@
   </head>
   <body>
     <header class="header-container"></header>
+
     <main class="checkout">
       <article class="checkout">
         <div class="container">
-          <p class="help" style="color: #c02828">
-            Please review your bill and pay
-          </p>
-          <div class="card-conteiner">
-            <div class="header-conteiner">
+          <p class="help">Please review your bill and pay</p>
+          <div class="card-container">
+            <div class="header-card-container">
               <h5 class="center-align">The Kraken Inn.</h5>
               <p>Dec 12, 2022 Kl: 13:41</p>
             </div>
@@ -57,31 +56,33 @@
             </div>
             <div class="payment">
               <h5>Payment Information</h5>
-              <div class="credit-card-conteiner">
+              <div class="credit-card-container">
                 <div class="front">
                   <div class="number input-field">
-                    <label for="card-number">Card Number</label>
                     <input
                       type="text"
                       id="card-number"
                       class="input-card-number"
-                      maxlength="4"
+                      maxlength="16"
+                      placeholder="Kortnummer"
                     />
                     <input
                       type="text"
-                      id="card-number-1"
+                      id="card-date"
                       class="input-card-number"
                       maxlength="4"
+                      placeholder="MM/ÅÅ"
                     />
                     <input
                       type="text"
-                      id="card-number-2"
+                      id="card-cvv"
                       class="input-card-number"
-                      maxlength="4"
+                      maxlength="3"
+                      placeholder="CVV"
                     />
                   </div>
 
-                  <div class="cvv input-field">
+                  <!-- <div class="cvv input-field">
                     <label for="card-cvv">CVV</label>
                     <input
                       type="text"
@@ -89,12 +90,12 @@
                       class="input-card-cvv"
                       maxlength="3"
                     />
-                  </div>
-                  <div class="card-holder input-field">
+                  </div> -->
+                  <!-- <div class="card-holder input-field">
                     <label for="name">Card Holder</label>
                     <input type="text" name="name" id="name" />
-                  </div>
-                  <div class="card-expiration-date input-field">
+                  </div> -->
+                  <!-- <div class="card-expiration-date input-field">
                     <select id="month">
                       <option></option>
                       <option>Jan</option>
@@ -124,14 +125,14 @@
                       <option>2025</option>
                     </select>
                     <label>Expires</label>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
 
             <div class="btn-checkout">
-              <button class="button"><span>Cencel</span></button>
-              <button class="button"><span>Checkout</span></button>
+              <button class="button"><span>Avbryt</span></button>
+              <button class="button"><span>Beställ</span></button>
             </div>
           </div>
         </div>
