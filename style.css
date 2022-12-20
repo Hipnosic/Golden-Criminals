@@ -17,8 +17,9 @@
 
 .page-logotype {
   padding: 0em 1em;
-  width: 50%;
+  width: 90%;
   margin-right: 3em;
+  max-width: 20em;
 }
 
 /* .logotype {
@@ -27,7 +28,10 @@
   font-weight: lighter;
   font-size: 2.5rem;
 } */
-
+.img-container{
+  width: 100%;
+  height: 100%;
+}
 .logotype-container {
   display: flex;
   align-items: center;
