@@ -185,6 +185,19 @@ function createFooter() {
     </nav>`;
 }
 
+function orderFunction() {
+  var txt;
+  if (confirm("Are you sure you want to place this oprder?")) {
+    txt = "You placed an order!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+}
+
+
+
+
+
 products();
 addListener();
 customizeDrink();
