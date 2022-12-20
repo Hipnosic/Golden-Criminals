@@ -254,7 +254,6 @@ body{
   object-fit: cover;
 }
 
-<<<<<<< Updated upstream
 .noItems {
   margin-top: 2em;
   margin-left: 5vh;
@@ -356,7 +355,7 @@ a:hover {
 }
 .custom-order-button {
   font-size: 2rem;
-=======
+  }
 /*.container {
   position: relative;
   width: 80vmin;
@@ -388,5 +387,4 @@ a:hover {
     background-color: transparent;
     border: 4px solid #4a4c4e;
     color: #3c3d3e;
->>>>>>> Stashed changes
 }

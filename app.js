@@ -1,10 +1,7 @@
 const productContainer = document.querySelector('.products');
-<<<<<<< Updated upstream
 const db = [database.bbqs, database['best-foods'], database.breads, database.burgers, database.chocolates, database.desserts, database.drinks, database['fried-chicken'], database['ice-cream'], database['our-foods'], database.pizzas, database.porks, database.sandwiches, database.sausages, database.steaks];
 const pickedProducts = [database.bbqs[15], database['best-foods'][3], database.burgers[22], database.burgers[43], database.drinks[18]];
 
-=======
-const db = database;
 let numContainer = document.getElementById("num");
 let value = 0;
 let btnInc = document.querySelector(".inc");
@@ -12,16 +9,9 @@ let btnDec = document.querySelector(".dec");
 let btnReset = document.querySelector(".reset");
 
 
-for (const button of addProductBtn) {
-    button.addEventListener('click', () => {
-        alert('"Product name" added to cart');
-    });
-}
-
 
 // FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
 console.log(db.drinks)
->>>>>>> Stashed changes
 function products() {
     if (window.location.pathname == '/products.html') {
         //for (const category of db) {
@@ -53,11 +43,8 @@ function products() {
         // }
     }
 }
-<<<<<<< Updated upstream
-=======
 
 
->>>>>>> Stashed changes
 function addListener() {
     const products = document.querySelectorAll('.product');
     for (const product of products) {
@@ -81,7 +68,6 @@ function addListener() {
     }
 }
 
-<<<<<<< Updated upstream
 function customizeDrink() {
     if (window.location.pathname == '/products.html') {
         const products = document.querySelectorAll('.product');
@@ -162,8 +148,6 @@ function CheckAndCreateIfNoItem(productPos) {
     }
     mainContainer.style.display = '';
 }
-=======
->>>>>>> Stashed changes
 
 function createHeader() {
     //makes the html for header
@@ -227,11 +211,10 @@ addListener();
 customizeDrink();
 createHeader();
 createFooter();
-<<<<<<< Updated upstream
-=======
 
+if (window.location.pathname == '/order.html') {
 
-    btnInc.addEventListener("click", () => {
+   btnInc.addEventListener("click", () => {
       value++;
       numContainer.textContent = value;
     });
@@ -244,7 +227,9 @@ createFooter();
       numContainer.textContent = value;
     });
 
+}
+
+   
 
   
 
->>>>>>> Stashed changes
