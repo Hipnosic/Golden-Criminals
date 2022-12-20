@@ -6,18 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <script src="db.js"></script>
     <script src="app.js" defer></script>
   </head>
   <body>
     <header class="header-container"></header>
 
-    <container><h2>Your profile</h2></container>
-    <p>Köp cursed coins</p>
-    <p>Saldo</p>
-    <p>Lägg till betal/kredikort</p>
-    <p>Kvitto</p>
-    <p>Logga in/ut</p>
+    <container class="login-container"
+      ><h2 class="login-h2">Profil</h2>
+
+      <container class="icons-container">
+        <article class="coins-container">
+          <img
+            class="coins-icon"
+            src="/icons/aztec.png"
+            alt="icon for purchase coins"
+          />
+          <p>Köp cursed coins</p>
+        </article>
+
+        <article class="balance-container">
+          <img
+            class="balance-icon"
+            src="/icons/treasure.png"
+            alt="icon for purchase coins"
+          />
+          <p>Saldo</p>
+        </article>
+
+        <article class="credit-card-container">
+          <img
+            class="credit-card-icon"
+            src="/icons/credit-card.png"
+            alt="icon for purchase coins"
+          />
+          <p>Lägg till betalkort</p>
+        </article>
+      </container>
+
+      <p>Kvitto</p>
+      <button class="logout-btn">Logga ut</button>
+    </container>
 
     <footer class="footer-container"></footer>
   </body>

@@ -3,8 +3,8 @@
 *::before {
   margin: 0;
   /* background-color: #3B3B3B; */
-  background-image: url(/images/background.svg);
-  background-size: 100%;
+  /* background-image: url(/images/background.svg);
+  background-size: 100%; */
 }
 body{
   background-image: url(/images/background.svg);
