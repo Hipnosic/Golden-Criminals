@@ -148,11 +148,11 @@ function createHeader() {
         alt="The Kraken Inn logotype"
         />
     </a>
-    <a href="#">
+    <a href="#" style="text-decoration: none;">
       <button type="button" class="languageBtn">ENG</button>
     </a>
     <a href="login.html">
-    <button class="helpBtn">
+    <button class="loginBtn">
       <img src="/icons/pirate.svg" alt="Help" height="30" width="30" />
     </button>
     </a>`;
@@ -186,17 +186,13 @@ function createFooter() {
 }
 
 function orderFunction() {
-  var txt;
-  if (confirm("Are you sure you want to place this oprder?")) {
-    txt = "You placed an order!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
+    let txt;
+    if (confirm("Are you sure you want to place this oprder?")) {
+        txt = "You placed an order!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
 }
-
-
-
-
 
 products();
 addListener();
