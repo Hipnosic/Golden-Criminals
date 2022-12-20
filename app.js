@@ -164,22 +164,22 @@ function createFooter() {
     <nav class="nav-container">
       <a class="container-buttons" href="index.html">
         <button type="button" class="buttons">
-          <img class="icon" src="icons/pirate-skull.png" alt="Home icon" />
+          <img class="icon" src="icons/pirate-skull-light.svg" alt="Home icon" />
         </button>
       </a>
       <a class="container-buttons" href="products.html">
         <button type="button" class="buttons">
-          <img class="icon" src="icons/saber.png" alt="Home icon" />
+          <img class="icon" src="icons/saber-light.svg" alt="Home icon" />
         </button>
       </a>
       <a class="container-buttons" href="order.html">
         <button type="button" class="buttons">
-          <img class="icon" src="icons/chest.png" alt="Home icon" />
+          <img class="icon" src="icons/chest-light.svg" alt="Home icon" />
         </button>
       </a>
       <a class="container-buttons" href="checkout.html">
         <button type="button" class="buttons">
-          <img class="icon" src="icons/right.png" alt="Home icon" />
+          <img class="icon" src="icons/right-light.svg" alt="Home icon" />
         </button>
       </a>
     </nav>`;
