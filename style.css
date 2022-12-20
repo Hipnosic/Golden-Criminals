@@ -271,7 +271,9 @@
   margin: 0;
   position: absolute;
 }
-
+.filters-nav li ul li {
+    width: 100%;
+}
 .filters-nav li {
   height: auto;
   width: 25%;
