@@ -220,6 +220,18 @@
   margin-top: 80px;
   background-color: rgb(237, 12, 12); 
 } */
+.search-container{
+  width: 100%;
+  height: 2em;
+  justify-content: center;
+  display: flex;
+}
+
+.searchbar{
+  height: 2em;
+  width: 14em;
+
+}
 
 .icon {
   width: 50%;
@@ -227,8 +239,8 @@
 }
 
 .noItems {
+  margin-top: 2em;
   margin-left: 5vh;
-  background-color: red;
   color: white;
   width: 20em;
   height: 3em;

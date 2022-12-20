@@ -30,13 +30,10 @@ function products() {
             productDiv.append(img, header, span, text, button);
             productContainer.append(productDiv);
         }
-        //}
     }
 }
-console.log(database)
 function addListener() {
     const products = document.querySelectorAll('.product');
-
     for (const product of products) {
         let clicked = false;
         product.addEventListener('click', (e) => {
@@ -61,12 +58,15 @@ function addListener() {
 
 function searchFunction() {
     const products = document.querySelectorAll('.product');
+    // gets the input
     input = document.getElementById('searchbar').value
     let productPos = 0;
     for (const product of pickedProducts) {
+      //toUpperCase for non caps specific
+      //if the product description includes input or if the product name includes input
         if (product.dsc.toUpperCase().includes(input.toUpperCase()) || product.name.toUpperCase().includes(input.toUpperCase())) {
             /*
-            for testing
+            for testing the search function
             console.log(productPos)
             console.log(drink.dsc.toUpperCase());
             console.log(input.toUpperCase());
@@ -80,12 +80,14 @@ function searchFunction() {
         else {
             products[productPos].style.display = 'none';
         }
+        //makes sure that the right product gets changed
         productPos++;
     }
     CheckAndCreateIfNoItem(productPos);
 }
 
 function CheckAndCreateIfNoItem(productPos) {
+    //checks if there is no product left and creates text if none are left
     let mainContainer = document.querySelector('.noItems');
     const products = document.querySelectorAll('.product');
     for (let i = 0; i < productPos; i++) {
@@ -98,6 +100,7 @@ function CheckAndCreateIfNoItem(productPos) {
 }
 
 function createHeader() {
+  //makes the html for header
     let headerContainer = document.querySelector('.header-container');
     headerContainer.innerHTML = `
     <img
@@ -113,6 +116,7 @@ function createHeader() {
     </button>`;
 }
 function createFooter() {
+  //makes the html for footer
     let FooterContainer = document.querySelector('.footer-container');
     FooterContainer.innerHTML = `
     <nav class="nav-container">
