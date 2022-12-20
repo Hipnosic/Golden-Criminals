@@ -111,9 +111,11 @@ function createHeader() {
     <a href="#">
       <button type="button" class="languageBtn">ENG</button>
     </a>
+    <a href="login.html">
     <button class="helpBtn">
       <img src="/icons/pirate.svg" alt="Help" height="30" width="30" />
-    </button>`;
+    </button>
+    </a>`;
 }
 function createFooter() {
   //makes the html for footer
