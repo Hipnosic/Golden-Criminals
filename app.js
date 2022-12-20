@@ -2,6 +2,16 @@ const productContainer = document.querySelector('.products');
 const db = [database.bbqs, database['best-foods'], database.breads, database.burgers, database.chocolates, database.desserts, database.drinks, database['fried-chicken'], database['ice-cream'], database['our-foods'], database.pizzas, database.porks, database.sandwiches, database.sausages, database.steaks];
 const pickedProducts = [database.bbqs[15], database['best-foods'][3], database.burgers[22], database.burgers[43], database.drinks[18]];
 
+let numContainer = document.getElementById("num");
+let value = 0;
+let btnInc = document.querySelector(".inc");
+let btnDec = document.querySelector(".dec");
+let btnReset = document.querySelector(".reset");
+
+
+
+// FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
+console.log(db.drinks)
 function products() {
     if (window.location.pathname == '/products.html') {
         //for (const category of db) {
@@ -33,6 +43,8 @@ function products() {
         // }
     }
 }
+
+
 function addListener() {
     const products = document.querySelectorAll('.product');
     for (const product of products) {
@@ -148,11 +160,11 @@ function createHeader() {
         alt="The Kraken Inn logotype"
         />
     </a>
-    <a href="#">
+    <a href="#" style="text-decoration: none;">
       <button type="button" class="languageBtn">ENG</button>
     </a>
     <a href="login.html">
-    <button class="helpBtn">
+    <button class="loginBtn">
       <img src="/icons/pirate.svg" alt="Help" height="30" width="30" />
     </button>
     </a>`;
@@ -186,20 +198,38 @@ function createFooter() {
 }
 
 function orderFunction() {
-  var txt;
-  if (confirm("Are you sure you want to place this oprder?")) {
-    txt = "You placed an order!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
+    let txt;
+    if (confirm("Are you sure you want to place this oprder?")) {
+        txt = "You placed an order!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
 }
-
-
-
-
 
 products();
 addListener();
 customizeDrink();
 createHeader();
 createFooter();
+
+if (window.location.pathname == '/order.html') {
+
+   btnInc.addEventListener("click", () => {
+      value++;
+      numContainer.textContent = value;
+    });
+    btnDec.addEventListener("click", () => {
+      value--;
+      numContainer.textContent = value;
+    });
+    btnReset.addEventListener("click", () => {
+      value = 0;
+      numContainer.textContent = value;
+    });
+
+}
+
+   
+
+  
+
