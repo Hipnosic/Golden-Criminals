@@ -185,30 +185,6 @@ function createFooter() {
     </nav>`;
 }
 
-// function orderFunction() {
-//   // CHECKS IF ALL THE CARDS ARE HIDDEN THEN DISPLAYS THE WINNER OR IF THEY DREW
-//   let checkout = document.querySelectorAll('.hide')
-//   if (checkout[cardCounter]) {
-//     checkout-contiener.style.display = 'none' //HIDES THE PLAY SITE
-//     checkout-contiener.style.display = 'flex' //ADDS FLEX TO WINNER DISPLAY
-//     checkout-contiener.classList.remove('display-none') //SHOWS THE WINNER DISPLAY
-//     if (playerOne.score < playerTwo.score) {
-//       winnerName.innerText = `${playerTwo.name} is the best trainer!`
-
-//       winnerPoints.innerText = `${playerTwo.name} caught ${playerTwo.score} pokemons`
-//     } else if (playerOne.score == playerTwo.score) {
-//       winnerName.innerText = `${playerTwo.name} and ${playerOne.name} caught the same amount of pokemons`
-
-//       winnerPoints.innerText = `${playerTwo.name} caught ${playerTwo.score} pokemons and ${playerOne.name} caught ${playerOne.score} pokemons`
-//     } else {
-//       winnerName.innerText = `${playerOne.name} is the best trainer!`
-
-//       winnerPoints.innerText = `${playerOne.name} caught ${playerOne.score} pokemons`
-//     }
-//   }
-// }
-
-
 function orderFunction() {
   var txt;
   if (confirm("Are you sure you want to place this oprder?")) {
