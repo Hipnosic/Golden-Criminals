@@ -2,11 +2,13 @@
 *::after,
 *::before {
   margin: 0;
-  background-color: #3B3B3B;
-  background-image: url(/images/background.svg);
+  /*background-color: #3B3B3B;*/
+  /*background-image: url(/images/background.svg);*/
   background-size: 100%;
 }
-
+body{
+  background-image: url(/images/background.svg);
+}
 /* .featured-title,
 .logotype,
 .featured-products {
