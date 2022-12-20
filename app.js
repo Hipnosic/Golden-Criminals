@@ -109,7 +109,7 @@ function createHeader() {
       <button type="button" class="languageBtn">ENG</button>
     </a>
     <button class="helpBtn">
-      <img src="/icons/question.png" alt="Help" height="30" width="30" />
+      <img src="/icons/pirate.svg" alt="Help" height="30" width="30" />
     </button>`;
 }
 function createFooter() {
