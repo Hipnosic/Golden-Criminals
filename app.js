@@ -1,6 +1,6 @@
 const productContainer = document.querySelector('.products');
 const db = [database.bbqs, database['best-foods'], database.breads, database.burgers, database.chocolates, database.desserts, database.drinks, database['fried-chicken'], database['ice-cream'], database['our-foods'], database.pizzas, database.porks, database.sandwiches, database.sausages, database.steaks];
-const pickedProducts = [database.bbqs[15], database['best-foods'][3], database.burgers[22], database.burgers[43]];
+const pickedProducts = [database.bbqs[15], database['best-foods'][3], database.burgers[22], database.burgers[43], database.drinks[18]];
 
 function products() {
     if (window.location.pathname == '/products.html') {
@@ -30,6 +30,7 @@ function products() {
             productDiv.append(img, header, span, text, button);
             productContainer.append(productDiv);
         }
+        // }
     }
 }
 function addListener() {
