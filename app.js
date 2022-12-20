@@ -140,11 +140,13 @@ function createHeader() {
     //makes the html for header
     let headerContainer = document.querySelector('.header-container');
     headerContainer.innerHTML = `
-    <img
-      class="page-logotype"
-      src="/images/kraken-text-logo.svg"
-      alt="The Kraken Inn logotype"
-    />
+    <a href="index.html" class="img-container">
+        <img
+        class="page-logotype"
+        src="/images/kraken-text-logo.svg"
+        alt="The Kraken Inn logotype"
+        />
+    </a>
     <a href="#">
       <button type="button" class="languageBtn">ENG</button>
     </a>
