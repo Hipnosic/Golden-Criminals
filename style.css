@@ -216,7 +216,10 @@ background-color: rgb(0, 0, 0, 0%);
   font-size: 1.2em;
   color: rgb(227, 227, 227);
 }
-
+.login-h2 {
+    margin-top: 5%;
+    text-align: center;
+}
 .loginBtn {
   display: flex;
   justify-content: center;
@@ -443,7 +446,7 @@ a:hover {
   height: 4em;
   width: 10em;
   border-radius: 2em;
-  margin-top: 14em;
+  margin-top: 5em;
   margin-left: 1em;
 }
 
