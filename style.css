@@ -436,7 +436,6 @@ a:hover {
   background-color: #614b43;
 }
 
-
 /* checkout page */
 
 .container {
@@ -445,51 +444,18 @@ a:hover {
   max-width: 400px;
   position: absolute;
   margin: 1em;
-}
-
-.payment {
   margin-top: 2em;
-  display: flex;
-  flex-direction: column;
-  height: 12em;
+  margin-left: 1em;
 }
 
-.payment h5 {
-  font-size: 1.2em;
-  color: rgb(238, 238, 238);
-  font-weight: 100;
+.help {
+  padding-bottom: 2em;
 }
 
-.credit-card-container {
-  text-align: center;
+.center-align {
+  padding-bottom: 2em;
 }
 
-#card-number {
-  min-width: 94.5%;
-  opacity: 80%;
-}
-
-#card-date,
-#card-cvv{
-  width: 45%;
-  opacity: 80%;
-}
-
-.input-card-number{
-  height: 3em;
-  border-radius: .5em;
-  padding-left: .5em;
-}
-
-.btn-checkout {
-  display: flex;
-  justify-content: flex-end;
-  padding: .3em;
-}
-
-.btn-checkout button {
-  margin: .3em;
-  height: 3em;
-  width: 6em;
-  border-radius: 2em;
+.header-card-container,p {
+  padding-bottom: 1em;
 }
