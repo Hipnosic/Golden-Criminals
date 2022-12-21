@@ -1,14 +1,9 @@
 const productContainer = document.querySelector('.products');
-const db = [database.bbqs, database['best-foods'], database.breads, database.burgers, database.chocolates, database.desserts, database.drinks, database['fried-chicken'], database['ice-cream'], database['our-foods'], database.pizzas, database.porks, database.sandwiches, database.sausages, database.steaks];
-const pickedProducts = [database.bbqs[15], database['best-foods'][3], database.burgers[22], database.burgers[43], database.drinks[18]];
-
 let numContainer = document.getElementById("num");
 let value = 0;
 let btnInc = document.querySelector(".inc");
 let btnDec = document.querySelector(".dec");
 let btnReset = document.querySelector(".reset");
-
-
 
 // FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
 console.log(db.drinks)
@@ -16,13 +11,13 @@ function products() {
     if (window.location.pathname == '/products.html') {
         //for (const category of db) {
         for (const product of pickedProducts) {
-            const productDiv = document.createElement('article');
+            const productArticle = document.createElement('article');
             const img = document.createElement('img');
             const header = document.createElement('h2');
             const span = document.createElement('span');
             const text = document.createElement('p');
             const button = document.createElement('button');
-            productDiv.classList.add('product');
+            productArticle.classList.add('product');
             img.classList.add('product-img');
             header.classList.add('product-name');
             span.classList.add('product-info');
@@ -37,8 +32,8 @@ function products() {
             span.innerText = `${product.dsc}`;
             text.innerText = `${product.price} kr`;
             button.innerText = '+';
-            productDiv.append(img, header, span, text, button);
-            productContainer.append(productDiv);
+            productArticle.append(img, header, span, text, button);
+            productContainer.append(productArticle);
         }
         // }
     }
@@ -100,9 +95,6 @@ function customizeDrink() {
     }
 }
 
-function redirect() {
-
-}
 
 function searchFunction() {
     const products = document.querySelectorAll('.product');
@@ -274,13 +266,6 @@ function initButtonsListeners() {
     }
 }
 
-initButtonsListeners();
-products();
-addListener();
-customizeDrink();
-createHeader();
-createFooter();
-
 if (window.location.pathname == '/order.html') {
 
     btnInc.addEventListener("click", () => {
@@ -300,5 +285,14 @@ if (window.location.pathname == '/order.html') {
 
 
 
-
-
+initButtonsListeners();
+addToProducts(database.chocolates[11]);
+addToProducts(database.bbqs[11]);
+addToProducts(database.burgers[12]);
+addToProducts(database.desserts[11]);
+addToProducts(database.pizzas[11]);
+products();
+addListener();
+customizeDrink();
+createHeader();
+createFooter();

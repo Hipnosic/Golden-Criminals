@@ -1,15 +1,13 @@
 
 describe('Custom order', () => {
 
-    it(`Form should not be empty`, () => {
+    it("product list length should be 5", () => {
+        addToProducts(database.chocolates[11]);
+        addToProducts(database.bbqs[11]);
+        addToProducts(database.burgers[11]);
+        addToProducts(database.desserts[11]);
+        addToProducts(database.pizzas[11]);
 
-        expect(checkOrder(input)).not.toEqual('');
-    });
-});
-
-describe('Ready to order', () => {
-
-    it('Custom order is ready', () => {
-        expect(clickButton()).toBeTruthy();
-    });
+        expect(checkProducts()).toBe(5);
+    })
 });
