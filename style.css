@@ -65,7 +65,6 @@ body{
   width: 100%;
   grid-template-columns: repeat(1, 100%);
   gap: 3rem;
-  margin-bottom: 80px;
 }
 
 .featured-product,
@@ -166,7 +165,7 @@ body{
   background-size: 100%;
   /* background-color: red; */
   display: flex;
-  position: fixed;
+  position: sticky;
   bottom: 0px;
   height: 5em;
 }
@@ -198,6 +197,7 @@ body{
 }
 
 .header-container {
+    border-bottom: 1px solid black;
   top: 0em;
   position: sticky;
   display: flex;
@@ -256,7 +256,6 @@ body{
 
 /* .footer-container {
   margin-top: 80px;
-  background-color: rgb(237, 12, 12); 
 } */
 .search-container {
   width: 100%;
