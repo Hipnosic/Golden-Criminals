@@ -172,6 +172,7 @@ function createHeader() {
 function createFooter() {
     //makes the html for footer
     let FooterContainer = document.querySelector('.footer-container');
+    console.log(FooterContainer);
     FooterContainer.innerHTML = `
     <nav class="nav-container">
       <a class="container-buttons" href="index.html">
@@ -199,13 +200,82 @@ function createFooter() {
 
 function orderFunction() {
     let txt;
-    if (confirm("Are you sure you want to place this oprder?")) {
+    if (confirm("Are you sure you want to place this order?")) {
         txt = "You placed an order!";
     } else {
         txt = "You pressed Cancel!";
     }
 }
 
+function initButtonsListeners() {
+
+  let firstQty = 1;
+  let secondQty = 1;
+  let thirdQty = 1;
+
+  const plus = document.querySelector(".plus"),
+  minus = document.querySelector(".minus"),
+  num = document.querySelector(".num");
+
+
+  if (plus !== null) {
+    plus.addEventListener("click", ()=>{
+      firstQty = firstQty + 1;
+      num.innerText = firstQty < 10 ? "0" + firstQty : firstQty;
+    })
+  }
+
+  if (minus !== null) {
+    minus.addEventListener("click", ()=>{
+      if (firstQty > 0) {
+        firstQty = firstQty - 1;
+        num.innerText = firstQty < 10 ? "0" + firstQty : firstQty;
+      }
+    })
+  }
+
+  const plus1 = document.querySelector(".plus1"),
+  minus1 = document.querySelector(".minus1"),
+  num1 = document.querySelector(".num1");
+
+  if (plus1 !== null) {
+    plus1.addEventListener("click", ()=>{
+      secondQty = secondQty + 1;
+      num1.innerText = secondQty < 10 ? "0" + secondQty : secondQty;
+    })
+  }
+
+  if (minus1 !== null) {
+    minus1.addEventListener("click", ()=>{
+      if (secondQty > 0) {
+        secondQty = secondQty - 1;
+        num1.innerText = secondQty < 10 ? "0" + secondQty : secondQty;
+      }
+    })
+  }
+
+  const plus2 = document.querySelector(".plus2"),
+  minus2 = document.querySelector(".minus2"),
+  num2 = document.querySelector(".num2");
+
+  if (plus2 !== null) {
+    plus2.addEventListener("click", ()=>{
+      thirdQty = thirdQty + 1;
+      num2.innerText = thirdQty < 10 ? "0" + thirdQty : thirdQty;
+    })
+  }
+
+  if (minus2 !== null) {
+    minus2.addEventListener("click", ()=>{
+      if (thirdQty > 0) {
+        thirdQty = thirdQty - 1;
+        num2.innerText = thirdQty < 10 ? "0" + thirdQty : thirdQty;
+      }
+    })
+  }
+}
+
+initButtonsListeners();
 products();
 addListener();
 customizeDrink();
