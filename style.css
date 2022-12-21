@@ -401,17 +401,22 @@ a:hover {
   }
 
   .order-btn {
-    margin-left: 9rem;
+  height: 3em;
+  width: 6em;
+  border-radius: 2em;
+  margin-left: 9rem;
+  margin-top: 5rem;
   }
   
   button.inc,
   button.dec {
     background-color: #242526;
+    border: none;
     color: #ffffff;
   }
   button.reset {
-    background-color: transparent;
-    border: 4px solid #4a4c4e;
+    background-color:  #242526;;
+    border: none;
     color: #fb1d09;
 }
 
