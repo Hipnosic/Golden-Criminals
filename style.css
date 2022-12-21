@@ -65,6 +65,7 @@ body{
   width: 100%;
   grid-template-columns: repeat(1, 100%);
   gap: 3rem;
+  padding-bottom: 80px;
 }
 
 .featured-product,
@@ -165,7 +166,7 @@ body{
   background-size: 100%;
   /* background-color: red; */
   display: flex;
-  position: sticky;
+  position: fixed;
   bottom: 0px;
   height: 5em;
 }
