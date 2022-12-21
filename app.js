@@ -24,7 +24,9 @@ function products() {
             text.classList.add('product-price');
             button.classList.add('add-product');
             button.addEventListener('click', () => {
-                alert('"Product name" added to cart');
+                if (confirm("Are you sure you want to place this order?")) {
+                    alert('Your order has been placed')
+                }
             });
             img.setAttribute('src', `${product.img}`);
             img.setAttribute('alt', `${product.name}`);
@@ -142,7 +144,7 @@ function CheckAndCreateIfNoItem(productPos) {
 }
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
 }
 
 function createHeader() {
