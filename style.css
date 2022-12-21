@@ -66,6 +66,7 @@ body{
   width: 100%;
   grid-template-columns: repeat(1, 100%);
   gap: 3rem;
+  padding-bottom: 80px;
 }
 
 .featured-product,
@@ -265,8 +266,9 @@ body{
   display: flex;
 }
 .search-container-text{
+    text-align: center;
   color: #f5f5f5;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 
 .searchbar {
@@ -301,6 +303,7 @@ body{
 }
 
 .filters-nav {
+  border-top: 1px solid #c9d4d8;
   height: 50px;
   width: 99%;
   padding: 0;
