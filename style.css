@@ -155,10 +155,10 @@ body{
   border-radius: 50%;
 }
 .nav-container a:hover {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 .nav-container button {
-    cursor: pointer;
+  cursor: pointer;
 }
 .nav-container {
   border-top: 1px solid black;
@@ -173,13 +173,12 @@ body{
 
 .buttons,
 .container-buttons {
-background-size: cover;
-/* background-color: #2d2d2d; */
-border: none;
-height: 100%;
-width: 100%;
-opacity: 95%;
-background-color: rgb(0, 0, 0, 0%);
+  background-size: cover;
+  /* background-color: #2d2d2d; */
+  border: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0%);
 }
 
 /* .header-text {
@@ -385,42 +384,42 @@ a:hover {
   align-items: center;
   text-align: center;
 }
-  .btns {
-    display:flex;
-    justify-content: space-evenly;
-    font-size:.7rem;
-    align-items: center;
-  }
-  .btns button {
-    right: 1.5em;
-    bottom: 2.5em;
-    height: 3em;
-    width: 3em;
-    border-radius: 50%;
-  }
- 
-  #num {
-    font-size: 2.5rem;
-  }
+.btns {
+  display:flex;
+  justify-content: space-evenly;
+  font-size:.7rem;
+  align-items: center;
+}
+.btns button {
+  right: 1.5em;
+  bottom: 2.5em;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
 
-  .order-btn {
+#num {
+  font-size: 2.5rem;
+}
+
+.order-btn {
   height: 3em;
   width: 6em;
   border-radius: 2em;
   margin-left: 9rem;
   margin-top: 5rem;
-  }
-  
-  button.inc,
-  button.dec {
-    background-color: #242526;
-    border: none;
-    color: #ffffff;
-  }
-  button.reset {
-    background-color:  #242526;;
-    border: none;
-    color: #fb1d09;
+}
+
+button.inc,
+button.dec {
+  background-color: #242526;
+  border: none;
+  color: #ffffff;
+}
+button.reset {
+  background-color:  #242526;;
+  border: none;
+  color: #fb1d09;
 }
 
 
@@ -451,15 +450,15 @@ a:hover {
 }
 
 .balance-table{
-width: 100%;
+  width: 100%;
 }
 
 .balance-table tr{
-margin-top: 4em;
-padding: .5em;
-display: flex;
-justify-content: space-between;
-background-color: #614b43;
+  margin-top: 4em;
+  padding: .5em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #614b43;
 }
 
 
