@@ -172,7 +172,6 @@ function createHeader() {
 function createFooter() {
     //makes the html for footer
     let FooterContainer = document.querySelector('.footer-container');
-    console.log(FooterContainer);
     FooterContainer.innerHTML = `
     <nav class="nav-container">
       <a class="container-buttons" href="index.html">
