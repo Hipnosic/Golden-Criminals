@@ -30,7 +30,7 @@ function products() {
             text.innerText = `${product.price} Coins`;
             button.innerText = '+';
             button.addEventListener('click', () => {
-                if (confirm(`This product costs ${text.innerText.split(' ')[0]} Coins, Are you sure you want to place this order? `)) {
+                if (confirm(`Your current balance is 350 Coins, this product costs ${text.innerText.split(' ')[0]} Coins, Are you sure you want to place this order? `)) {
                     alert('Your order has been placed')
                 }
             });
