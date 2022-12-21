@@ -23,17 +23,17 @@ function products() {
             span.classList.add('product-info');
             text.classList.add('product-price');
             button.classList.add('add-product');
-            button.addEventListener('click', () => {
-                if (confirm("Are you sure you want to place this order?")) {
-                    alert('Your order has been placed')
-                }
-            });
             img.setAttribute('src', `${product.img}`);
             img.setAttribute('alt', `${product.name}`);
             header.innerText = `${product.name}`;
             span.innerText = `${product.dsc}`;
             text.innerText = `${product.price} kr`;
             button.innerText = '+';
+            button.addEventListener('click', () => {
+                if (confirm(`This product costs ${text.innerText.split(' ')[0]} Coins, Are you sure you want to place this order? `)) {
+                    alert('Your order has been placed')
+                }
+            });
             productArticle.append(img, header, span, text, button);
             productContainer.append(productArticle);
         }
