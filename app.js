@@ -178,14 +178,9 @@ function createFooter() {
           <img class="icon" src="icons/saber-light.svg" alt="Home icon" />
         </button>
       </a>
-      <a class="container-buttons" href="order.html">
-        <button type="button" class="buttons">
-          <img class="icon" src="icons/chest-light.svg" alt="Home icon" />
-        </button>
-      </a>
       <a class="container-buttons" href="checkout.html">
         <button type="button" class="buttons">
-          <img class="icon" src="icons/right-light.svg" alt="Home icon" />
+          <img class="icon" src="icons/chest-light.svg" alt="Home icon" />
         </button>
       </a>
     </nav>`;
