@@ -69,8 +69,7 @@ body{
   padding-bottom: 80px;
 }
 
-.featured-product,
-.product {
+.featured-product {
   display: flex;
   margin: auto;
   min-width: 20em;
@@ -79,6 +78,11 @@ body{
   overflow: hidden;
   margin-left: .6em;
 }
+.product {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
 
 .featured-img,
 .product-img {
