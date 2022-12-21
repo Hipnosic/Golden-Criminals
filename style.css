@@ -77,7 +77,10 @@ body{
   color: rgb(226, 226, 226);
   position: relative;
   overflow: hidden;
-  margin-left: .6em;
+}
+
+.featured-product{
+  margin: 0 .3em 0 .3em;
 }
 
 .featured-img,
