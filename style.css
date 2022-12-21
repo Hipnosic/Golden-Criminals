@@ -358,28 +358,35 @@ a:hover {
 .custom-order-button {
   font-size: 2rem;
   }
-/*.container {
-  position: relative;
-  width: 80vmin;
-  background-color: #cccdd6;
-  padding: 100px 40px;
-  border-radius: 9px;
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
-}*/
+
+.cart-item {
+  display: flex;
+  margin-left: 3em;
+  align-items: center;
+  text-align: center;
+}
   .btns {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    font-size:.7rem;
+    align-items: center;
   }
   .btns button {
-    width: 20px;
-    padding: 15px 0;
-    font-size: 5px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-  
+    right: 1.5em;
+    bottom: 2.5em;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
   }
+ 
+  #num {
+    font-size: 2.5rem;
+  }
+
+  .order-btn {
+    margin-left: 9rem;
+  }
+  
   button.inc,
   button.dec {
     background-color: #242526;
@@ -388,5 +395,5 @@ a:hover {
   button.reset {
     background-color: transparent;
     border: 4px solid #4a4c4e;
-    color: #3c3d3e;
+    color: #fb1d09;
 }
