@@ -27,7 +27,7 @@ function products() {
             img.setAttribute('alt', `${product.name}`);
             header.innerText = `${product.name}`;
             span.innerText = `${product.dsc}`;
-            text.innerText = `${product.price} kr`;
+            text.innerText = `${product.price} Coins`;
             button.innerText = '+';
             button.addEventListener('click', () => {
                 if (confirm(`This product costs ${text.innerText.split(' ')[0]} Coins, Are you sure you want to place this order? `)) {
