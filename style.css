@@ -380,50 +380,6 @@ a:hover {
 }
 .custom-order-button {
   font-size: 2rem;
-  }
-
-.cart-item {
-  display: flex;
-  margin-left: 3em;
-  align-items: center;
-  text-align: center;
-}
-.btns {
-  display:flex;
-  justify-content: space-evenly;
-  font-size:.7rem;
-  align-items: center;
-}
-.btns button {
-  right: 1.5em;
-  bottom: 2.5em;
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
-}
-
-#num {
-  font-size: 2.5rem;
-}
-
-.order-btn {
-  height: 3em;
-  width: 6em;
-  border-radius: 2em;
-  margin-left: 9rem;
-  margin-top: 5rem;
-}
-
-button.inc,
-button.dec {
-  background-color: #242526;
-  border: none;
-  color: #ffffff;
-}
-button.reset {
-  background-color:  #242526;;
-  border: none;
-  color: #fb1d09;
 }
 
 
