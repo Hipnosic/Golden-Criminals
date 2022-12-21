@@ -8,6 +8,7 @@
 }
 body{
   background-image: url(/images/background.svg);
+  background-size: 100% ;
 }
 /* .featured-title,
 .logotype,
@@ -58,7 +59,7 @@ body{
 }
 
 .products {
-  background-color: #3b3b3b;
+  background-color: #432f28;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 100%);
@@ -142,7 +143,7 @@ body{
 
 .product-name,
 .product-price {
-  background-color: black;
+  background-color: #432f28;
   overflow: hidden;
 }
 .featured-add-product {
@@ -155,22 +156,24 @@ body{
 
 .nav-container {
   border-top: 1px solid black;
-  /* background-color: white; */
+  background-image: url(/images/wood2.jpg);
+  background-size: 100%;
+  /* background-color: red; */
   display: flex;
   position: fixed;
   bottom: 0px;
-  left: 0px;
-  width: 100%;
   height: 5em;
 }
 
 .buttons,
 .container-buttons {
-  background-color: #2d2d2d;
-  border: none;
-  height: 100%;
-  width: 100%;
-  opacity: 95%;
+background-size: cover;
+/* background-color: #2d2d2d; */
+border: none;
+height: 100%;
+width: 100%;
+opacity: 95%;
+background-color: rgb(0, 0, 0, 0%);
 }
 
 /* .header-text {
@@ -221,6 +224,8 @@ body{
   border-radius: 50%;
   margin-right: 0.7em;
 }
+
+
 .languageBtn img {
   width: 100%;
 }
@@ -274,7 +279,7 @@ body{
   margin: 0;
   z-index: 1;
   position: relative;
-  background-color: #444444;
+  background-color: #432f28;
 }
 
 .filters-nav {
@@ -296,7 +301,7 @@ body{
   font: normal bold 13px/1em Arial, Verdana, Helvetica;
   padding: 0;
   margin: 0;
-  background-color: #444444;
+  background-color: #432f28;
 }
 
 .filters-nav a {
@@ -312,7 +317,7 @@ body{
 
 .filters-nav li:hover,
 a:hover {
-  background-color: #444444;
+  background-color: #614b43ff;
 }
 
 .filters-nav li ul {
@@ -396,4 +401,93 @@ a:hover {
     background-color: transparent;
     border: 4px solid #4a4c4e;
     color: #fb1d09;
+}
+
+
+/* Login page */
+.coins-container,
+.balance-container,
+.credit-card-container {
+  /* background-color: red; */
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coins-icon,
+.balance-icon,
+.credit-card-icon {
+  width: 5em;
+  /* background-color: blue; */
+}
+
+.logout-btn{
+  height: 4em;
+  width: 10em;
+  border-radius: 2em;
+  margin-top: 14em;
+  margin-left: 1em;
+}
+
+.balance-table{
+width: 100%;
+}
+
+.balance-table tr{
+margin-top: 4em;
+padding: .5em;
+display: flex;
+justify-content: space-between;
+background-color: #614b43;
+}
+
+
+/* checkout page */
+
+.payment {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 12em;
+}
+
+.payment h5 {
+  font-size: 1.2em;
+  color: rgb(238, 238, 238);
+  font-weight: 100;
+}
+
+.credit-card-container {
+  text-align: center;
+}
+
+#card-number {
+  min-width: 94.5%;
+  opacity: 80%;
+}
+
+#card-date,
+#card-cvv{
+  width: 45%;
+  opacity: 80%;
+}
+
+.input-card-number{
+  height: 3em;
+  border-radius: .5em;
+  padding-left: .5em;
+}
+
+.btn-checkout {
+  display: flex;
+  justify-content: flex-end;
+  padding: .3em;
+}
+
+.btn-checkout button {
+  margin: .3em;
+  height: 3em;
+  width: 6em;
+  border-radius: 2em;
 }

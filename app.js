@@ -165,7 +165,7 @@ function createHeader() {
     </a>
     <a href="login.html">
     <button class="loginBtn">
-      <img src="/icons/pirate.svg" alt="Help" height="30" width="30" />
+      <img src="/icons/pirate.svg" alt="Login" height="30" width="30" />
     </button>
     </a>`;
 }
