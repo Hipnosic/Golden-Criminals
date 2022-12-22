@@ -4,8 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js"></script>
+    <script src="db.js"></script>
+    <script src="app.js" defer></script>
+    <script src="src/addProducts.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <title>Product Page</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header-container"></header>
+    <main>
+        <div class="search-container-text">Table: X | Balance: XXX Coins
+            <article class="search-container">
+            <input
+            class="searchbar"
+            type="text"
+            id="searchbar"
+            onkeyup="searchFunction()"
+            placeholder="Search for product..."
+            />
+      </article></div>
+        
+      <div class="filters">
+        <ul class="filters-nav">
+          <li>
+            <a href="#">Food</a>
+            <ul>
+                <li>
+                    <a href="#">All</a>
+                </li>
+              <li>
+                <a href="#">BBQ</a>
+              </li>
+              <li>
+                <a href="#">Best Food</a>
+              </li>
+              <li>
+                <a href="#">Bread</a>
+              </li>
+              <li>
+                <a href="#">Burgers</a>
+              </li>
+              <li>
+                <a href="#">Our Food</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Dessert</a>
+            <ul>
+                <li>
+                    <a href="#">All</a>
+                </li>
+              <li>
+                <a href="#">Dessert</a>
+              </li>
+              <li>
+                <a href="#">Ice Cream</a>
+              </li>
+              <li>
+                <a href="#">Chocolate</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Drinks</a>
+            <ul>
+                <li>
+                    <a href="#">All</a>
+                </li>
+              <li>
+                <a href="#" class="custom-order">Customize your drink</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="products"></div>
+      <div class="noItems" style="display: none">
+        Sorry! No products found with that name or description.
+      </div>
+    </main>
+    <footer class="footer-container"></footer>
+  </body>
 </html>
