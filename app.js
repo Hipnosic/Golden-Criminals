@@ -6,7 +6,6 @@ let btnDec = document.querySelector(".dec");
 let btnReset = document.querySelector(".reset");
 
 // FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
-console.log(db.drinks)
 function products() {
     if (window.location.pathname == '/products.html') {
         //for (const category of db) {
@@ -90,7 +89,6 @@ function customizeDrink() {
                     console.log(input.value)
                 }
             });
-
             customOrderForm.append(input, button);
             productContainer.append(customOrderForm);
         });
@@ -179,7 +177,6 @@ function createFooter() {
 }
 
 if (window.location.pathname == '/order.html') {
-
     btnInc.addEventListener("click", () => {
         value++;
         numContainer.textContent = value;
@@ -192,7 +189,6 @@ if (window.location.pathname == '/order.html') {
         value = 0;
         numContainer.textContent = value;
     });
-
 }
 
 addToProducts(database.chocolates[11]);
