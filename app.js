@@ -5,10 +5,8 @@ let btnInc = document.querySelector(".inc");
 let btnDec = document.querySelector(".dec");
 let btnReset = document.querySelector(".reset");
 
-// FLYTTA ALLA PRODUKT SCRIPTS TILL EGEN FIL
-function products() {
+function addProducts() {
     if (window.location.pathname == '/products.html') {
-        //for (const category of db) {
         for (const product of pickedProducts) {
             const productArticle = document.createElement('article');
             const img = document.createElement('img');
@@ -36,12 +34,11 @@ function products() {
             productArticle.append(img, header, span, text, button);
             productContainer.append(productArticle);
         }
-        // }
     }
 }
 
 
-function addListener() {
+function showProductDsc() {
     const products = document.querySelectorAll('.product');
     for (const product of products) {
         let clicked = false;
@@ -153,6 +150,7 @@ function createHeader() {
     </button>
     </a>`;
 }
+
 function createFooter() {
     //makes the html for footer
     let FooterContainer = document.querySelector('.footer-container');
@@ -176,28 +174,13 @@ function createFooter() {
     </nav>`;
 }
 
-if (window.location.pathname == '/order.html') {
-    btnInc.addEventListener("click", () => {
-        value++;
-        numContainer.textContent = value;
-    });
-    btnDec.addEventListener("click", () => {
-        value--;
-        numContainer.textContent = value;
-    });
-    btnReset.addEventListener("click", () => {
-        value = 0;
-        numContainer.textContent = value;
-    });
-}
-
 addToProducts(database.chocolates[11]);
 addToProducts(database.bbqs[11]);
 addToProducts(database.burgers[12]);
 addToProducts(database.desserts[11]);
 addToProducts(database.pizzas[11]);
-products();
-addListener();
+addProducts();
+showProductDsc();
 customizeDrink();
 createHeader();
 createFooter();
