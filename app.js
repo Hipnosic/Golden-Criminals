@@ -110,16 +110,6 @@ function searchFunction() {
             product.dsc.toUpperCase().includes(input.toUpperCase()) ||
             product.name.toUpperCase().includes(input.toUpperCase())
         ) {
-            /*
-            for testing the search function
-            console.log(productPos)
-            console.log(drink.dsc.toUpperCase());
-            console.log(input.toUpperCase());
-            console.log(!drink.dsc.toUpperCase().includes(input.toUpperCase()));
-            console.log(drink.name.toUpperCase());
-            console.log(input.toUpperCase());
-            console.log(!drink.name.toUpperCase().includes(input.toUpperCase()));
-            */
             products[productPos].style.display = '';
         } else {
             products[productPos].style.display = 'none';
